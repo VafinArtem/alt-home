@@ -1,0 +1,27 @@
+.social {
+  justify-self: start;
+  align-self: end;
+  margin-top: auto;
+  min-width: 278px;
+}
+
+.social__list {
+  @include list-none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  color: $special-gray;
+
+  &:hover,
+  &:focus {
+    color: $special-gray-darker;
+  }
+
+  &:active {
+    color: $special-gray;
+    opacity: 0.5;
+  }
+}

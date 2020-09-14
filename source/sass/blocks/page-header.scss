@@ -10,12 +10,6 @@
   grid-column: 1/2;
 }
 
-.page-header__social {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  align-self: flex-end;
-}
-
 .page-header__wrapper {
   display: grid;
   grid-template-columns: auto 1fr auto;
