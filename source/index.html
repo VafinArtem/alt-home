@@ -28,18 +28,24 @@
         </a>
       </div>
       <div class="page-header__subnav subnavigation">
-        <div class="subnavigation__item subnavigation__item--search search">
-          <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
+        <div class="subnavigation__item subnavigation__item">
+          <a href="#" class="subnavigation__link--search">
+            <svg class="subnavigation__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+
+          <!-- <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
             <button class="search__btn" type="submit">
               поиск
             </button>
             <label for="search" class="visually-hidden">Поиск</label>
             <input class="search__input" type="text" name="search" id="search">
-          </form>
+          </form> -->
         </div>
-        <div class="subnavigation__item personel">
-          <p class="personel__text">
-            <a href="#" class="personel__link">Вход</a> или <a href="#" class="personel__link">регистрация</a>
+        <div class="subnavigation__item subnavigation__item--personel">
+          <p class="subnavigation__text">
+            <a href="#" class="subnavigation__link">Вход</a> или <a href="#" class="subnavigation__link">регистрация</a>
           </p>
         </div>
       </div>
