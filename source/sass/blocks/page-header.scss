@@ -1,3 +1,16 @@
 .page-header {
+  display: grid;
+  grid-template-rows: auto 1fr;
   background-color: $special-blue;
+}
+
+.page-header__promo {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.page-header__social {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  align-self: flex-end;
 }
