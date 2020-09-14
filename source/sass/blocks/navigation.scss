@@ -1,0 +1,31 @@
+.navigation {
+  margin-top: auto;
+}
+
+.navigation__list {
+  @include list-none;
+
+  display: flex;
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    padding-right: 64px;
+  }
+}
+
+.navigation__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-marine;
+
+  &:hover,
+  &focus {
+    border-bottom: 1px solid $special-marine;
+  }
+
+  &:active {
+    color: $special-marine-darkest;
+    border-bottom: 1px solid $special-marine-darkest;
+  }
+}
