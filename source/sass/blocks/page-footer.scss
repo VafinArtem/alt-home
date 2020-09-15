@@ -1,0 +1,14 @@
+.page-footer {
+  background-color: $special-blue;
+}
+
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  min-height: 100px;
+}
+
+.page-footer__nav {
+  justify-self: center;
+}
