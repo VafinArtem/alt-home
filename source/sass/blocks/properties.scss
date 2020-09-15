@@ -1,0 +1,20 @@
+.properties {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 50px;
+}
+
+.properties__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.properties__description {
+  grid-row: 1/2;
+  margin: 0;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+}

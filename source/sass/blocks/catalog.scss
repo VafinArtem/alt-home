@@ -23,8 +23,32 @@
 
 .catalog__item {
   grid-column: span 3;
+  border: 1px solid $special-gray;
 
   &--vertical {
     grid-column: 3 / span 8;
   }
+}
+
+.catalog__img {
+  display: block;
+}
+
+.catalog__inner {
+  padding: 24px;
+  padding-top: 16px;
+  background-color: $basic-white;
+}
+
+.catalog__item-name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.catalog__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: transparentize($basic-black, 0.7);
 }
