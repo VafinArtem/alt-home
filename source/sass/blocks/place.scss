@@ -5,26 +5,26 @@
   grid-template-rows: auto;
   gap: 24px;
 
-  &::before {
+  &::before,
+  &::after {
     @include pseudo;
-    top: 91px;
-    left: 117px;
-    content: "01";
+
+    left: 147px;
+
     font-weight: bold;
     font-size: 64px;
     line-height: 64px;
     color: $special-blue-dark;
   }
 
+  &::before {
+    top: 100px;
+    content: "01";
+  }
+
   &::after {
-    @include pseudo;
     top: 204px;
-    left: 117px;
     content: "Место";
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 64px;
-    color: $special-blue-dark;
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
   }
@@ -88,5 +88,5 @@
 .place__link {
   grid-column: 5/8;
   justify-self: start;
-  margin-top: 16px;
+  margin-top: 8px;
 }
