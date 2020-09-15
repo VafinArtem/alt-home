@@ -11,6 +11,7 @@
 
 .place__subtitle {
   grid-column: 5/9;
+  padding-top: 36px;
 }
 
 .place__text {
@@ -35,9 +36,7 @@
   }
 }
 
-.place__img {
-  display: block;
-
+.place__img-box {
   &--min {
     grid-column: 5/9;
   }
@@ -47,10 +46,15 @@
   }
 }
 
+.place__img {
+  display: block;
+}
+
 .place__blockquote {
   grid-column: 4/10;
   padding-left: 28px;
   margin: 0;
+  margin: 8px 0;
   font-size: 22px;
   line-height: 40px;
   border-left: 2px solid $special-marine;
@@ -59,4 +63,5 @@
 .place__link {
   grid-column: 5/8;
   justify-self: start;
+  margin-top: 16px;
 }
