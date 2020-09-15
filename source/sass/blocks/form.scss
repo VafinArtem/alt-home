@@ -119,9 +119,8 @@
 
   &:checked {
     & + .form__checkbox {
-      padding: 2px;
       background-color: $special-marine;
-      background-clip: content-box;
+      box-shadow: inset 0 0 0 3px $basic-white;
     }
   }
 }
