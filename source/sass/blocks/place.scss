@@ -1,0 +1,45 @@
+.place {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  column-gap: 24px;
+}
+
+.place__title {
+  grid-column: 6/7;
+}
+
+.place__subtitle {
+  grid-column: 5/9;
+}
+
+.place__text {
+  grid-column: 5/9;
+
+  &--aside-right {
+    grid-column: 10/12;
+  }
+
+  &--aside-left {
+    grid-column: 2/4;
+  }
+}
+
+.place__img {
+  &--min {
+    grid-column: 5/9;
+  }
+
+  &--max {
+    grid-column: 2/12;
+  }
+}
+
+.place__blockquote {
+  grid-column: 4/10;
+}
+
+.place__link {
+  grid-column: 5/8;
+  justify-self: start;
+}
