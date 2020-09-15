@@ -11,6 +11,7 @@
 .catalog__subtitle {
   align-self: center;
   padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .catalog__list {
@@ -24,9 +25,13 @@
 .catalog__item {
   grid-column: span 3;
   border: 1px solid $special-gray;
+  background-color: $basic-white;
 
   &--vertical {
     grid-column: 3 / span 8;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 24px;
   }
 }
 
@@ -35,20 +40,37 @@
 }
 
 .catalog__inner {
+  display: grid;
+  grid-template-rows: repeat(2, min-content) 1fr;
+  min-height: 194px;
   padding: 24px;
   padding-top: 16px;
-  background-color: $basic-white;
+
+  &--vertical {
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-right: 23px;
+  }
 }
 
 .catalog__item-name {
   margin: 0;
+  padding-bottom: 8px;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
 }
 
 .catalog__text {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: transparentize($basic-black, 0.7);
+}
+
+.catalog__description {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 2px solid $special-blue-dark;
 }

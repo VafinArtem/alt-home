@@ -3,6 +3,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   column-gap: 50px;
+
+  &--vertical {
+    column-gap: 179px;
+  }
 }
 
 .properties__item {
