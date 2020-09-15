@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .place__title {
@@ -15,6 +15,16 @@
 
 .place__text {
   grid-column: 5/9;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+
+  &--aside-right,
+  &--aside-left {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   &--aside-right {
     grid-column: 10/12;
@@ -26,6 +36,8 @@
 }
 
 .place__img {
+  display: block;
+
   &--min {
     grid-column: 5/9;
   }
@@ -37,6 +49,11 @@
 
 .place__blockquote {
   grid-column: 4/10;
+  padding-left: 28px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 40px;
+  border-left: 2px solid $special-marine;
 }
 
 .place__link {
