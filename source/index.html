@@ -260,56 +260,63 @@
       </ul>
       </div>
     </section>
-    <section class="page-main__request request" id="request">
-      <h2 class="request__title title">Оставить заявку</h2>
-      <h3 class="request__subtitle subtitle">Мы свяжемся с вами</h3>
-      <form action="https://echo.htmlacademy.ru" method="POST" request__form form>
-        <fieldset class="form__box">
-          <legend class="visually-hidden">Как к вам обращаться</legend>
-          <div class="form__wrapper">
-            <label for="status" class="form__title">Обращение</label>
-            <select name="status" id="status" class="form__input form__input--status">
-              <option value="mister">Мистер</option>
-              <option value="mister">Мисс</option>
-              <option value="mister">Миссис</option>
-            </select>
-          </div>
-          <div class="form__wrapper">
-            <label for="name" class="form__title">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Джон">
-          </div>
-          <div class="form__wrapper">
-            <label for="surname" class="form__title">Фамилия</label>
-            <input type="text" name="surname" id="surname" placeholder="Смит">
-          </div>
-        </fieldset>
-        <fieldset class="form__box">
-          <legend class="visually-hidden">Ваши контакты</legend>
-          <div class="form__wrapper">
-            <label for="email" class="form__title">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com">
-          </div>
-          <div class="form__wrapper">
-            <label for="phone" class="form__title">E-mail</label>
-            <input type="tel" name="phone" id="phone" placeholder="+7 999 999-99-99"
-              pattern="8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
-          </div>
-        </fieldset>
-        <fieldset class="form__box">
-          <legend class="visually-hidden">Согласия</legend>
-          <label class="form__name form__name--color">
-            <input class="form__check visually-hidden" type="checkbox" name="personel" value="agree">
-            <span class="form__box form__box"></span>
-            <span class="form__title">Согласие на обработку персональных данных</span>
-          </label>
-          <label class="form__name form__name--color">
-            <input class="form__check visually-hidden" type="checkbox" name="subscribe" value="agree" checked>
-            <span class="form__box form__box"></span>
-            <span class="form__title">Подписка на рассылку</span>
-          </label>
-        </fieldset>
-        <button type="submit" class="form__button button">Отправить</button>
-      </form>
+    <section class="page-main__request request container" id="request">
+      <div class="request__wrapper">
+        <h2 class="request__title title">Оставить заявку</h2>
+        <h3 class="request__subtitle subtitle">Мы свяжемся с вами</h3>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="request__form form">
+          <fieldset class="form__box">
+            <legend class="visually-hidden">Как к вам обращаться</legend>
+            <div class="form__wrapper form__wrapper--personel">
+              <div class="form__inner">
+                <label for="status" class="form__title">Обращение</label>
+                <select name="status" id="status" class="form__input form__input--status">
+                  <option value="mister">Мистер</option>
+                  <option value="mister">Мисс</option>
+                  <option value="mister">Миссис</option>
+                </select>
+              </div>
+              <div class="form__inner">
+                <label for="name" class="form__title">Имя</label>
+                <input type="text" name="name" id="name" placeholder="Джон" class="form__input">
+              </div>
+              <div class="form__inner">
+                <label for="surname" class="form__title">Фамилия</label>
+                <input type="text" name="surname" id="surname" placeholder="Смит" class="form__input">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__box">
+            <legend class="visually-hidden">Ваши контакты</legend>
+            <div class="form__wrapper form__wrapper--contacts">
+              <div class="form__inner">
+                <label for="email" class="form__title">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com" class="form__input">
+              </div>
+              <div class="form__inner">
+                <label for="phone" class="form__title">Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="+7 999 999-99-99"
+                  pattern="8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" class="form__input">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__box">
+            <legend class="visually-hidden">Согласия</legend>
+            <label class="form__name form__name--color">
+              <input class="form__check visually-hidden" type="checkbox" name="personel" value="agree">
+              <span class="form__box form__box"></span>
+              <span class="form__title">Согласие на обработку персональных данных</span>
+            </label>
+            <label class="form__name form__name--color">
+              <input class="form__check visually-hidden" type="checkbox" name="subscribe" value="agree" checked>
+              <span class="form__box form__box"></span>
+              <span class="form__title">Подписка на рассылку</span>
+            </label>
+          </fieldset>
+          <button type="submit" class="form__button button">Отправить</button>
+        </form>
+      </div>
+      <img src="img/image_boat@1x.jpg" width="678" height="737" alt="" class="request__img">
     </section>
   </main>
 

@@ -1,0 +1,26 @@
+.request {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+
+.request__wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, min-content) 1fr;
+  padding-top: 100px;
+}
+
+.request__title {
+  grid-column: 3/5;
+}
+
+.request__subtitle {
+  grid-column: 2/6;
+  padding-top: 60px;
+  padding-bottom: 24px;
+}
+
+.request__form {
+  grid-column: 2/6;
+}
