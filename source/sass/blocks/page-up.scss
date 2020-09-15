@@ -1,0 +1,45 @@
+.page-up {
+  position: fixed;
+  display: none;
+  right: 200px;
+  bottom: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid $special-marine;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.page-up__btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $special-marine;
+  background-color: $basic-white;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    & .page-up__icon {
+      width: 35px;
+      height: 21px;
+    }
+  }
+
+  &:active {
+    & .page-up__icon {
+      width: 20px;
+      height: 11px;
+      color: $special-blue-dark;
+    }
+  }
+}
+
+.page-up__icon {
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
