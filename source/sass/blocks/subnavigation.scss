@@ -26,25 +26,4 @@
     color: $special-marine-darkest;
     border-bottom: 1px solid $special-marine-darkest;
   }
-
-  &--search {
-    display: block;
-
-    &:hover,
-    &:focus {
-      border-bottom: none;
-
-      & .subnavigation__icon {
-        color: $special-marine-darkest;
-      }
-    }
-
-    &:active {
-      border-bottom: none;
-    }
-  }
-}
-
-.subnavigation__icon {
-  color: $special-marine;
 }
