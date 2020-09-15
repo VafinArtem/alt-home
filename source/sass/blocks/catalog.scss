@@ -12,3 +12,19 @@
   align-self: center;
   padding-top: 60px;
 }
+
+.catalog__list {
+  @include list-none;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.catalog__item {
+  grid-column: span 3;
+
+  &--vertical {
+    grid-column: 3 / span 8;
+  }
+}
