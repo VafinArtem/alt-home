@@ -1,0 +1,14 @@
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__title {
+  align-self: center;
+  margin-right: -100px;
+}
+
+.catalog__subtitle {
+  align-self: center;
+  padding-top: 60px;
+}
