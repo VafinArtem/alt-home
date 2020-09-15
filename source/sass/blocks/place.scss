@@ -1,8 +1,33 @@
 .place {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 24px;
+
+  &::before {
+    @include pseudo;
+    top: 91px;
+    left: 117px;
+    content: "01";
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: $special-blue-dark;
+  }
+
+  &::after {
+    @include pseudo;
+    top: 204px;
+    left: 117px;
+    content: "Место";
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: $special-blue-dark;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+  }
 }
 
 .place__title {
