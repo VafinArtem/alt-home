@@ -111,8 +111,8 @@
     </section>
   </header>
 
-  <main class="page-main container">
-    <section class="page-main__place place">
+  <main class="page-main">
+    <section class="page-main__place place container">
       <h2 class="place__title title">Место</h2>
       <h3 class="place__subtitle subtitle">Парк отдыха на берегу Ладожского озера</h3>
       <p class="place__text">Отдохните в уютных деревянных домах с камином, сауной и джакузи, расположенных на берегу
@@ -157,125 +157,127 @@
       <a href="" class="place__link button">Бесплатно забронировать</a>
     </section>
     <section class="page-main__catalog catalog">
-      <h2 class="catalog__title title">Каталог</h2>
-      <h3 class="catalog__subtitle subtitle">Дома для аренды</h3>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__img" src="" alt="Фото современного дома">
-          </a>
-          <div class="catalog__wrapper">
-            <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Современная классика</a>
-            <p class="catalog__description">Площадь — 186 м2</p>
-            <dl class="catalog__description properties">
-              <div class="properties__wrapper">
-                <dt class="properties__item">комнат</dt>
-                <dd class="properties__description">5</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">спальни</dt>
-                <dd class="properties__description">3</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">этажа</dt>
-                <dd class="properties__description">2</dd>
-              </div>
-            </dl>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__img" src="" alt="Фото дома на берегу озера">
-          </a>
-          <div class="catalog__wrapper">
-            <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Дом на берегу озера</a>
-            <p class="catalog__description">Площадь — 242 м2</p>
-            <dl class="catalog__description properties">
-              <div class="properties__wrapper">
-                <dt class="properties__item">комнат</dt>
-                <dd class="properties__description">7</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">спальни</dt>
-                <dd class="properties__description">4</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">этажа</dt>
-                <dd class="properties__description">2</dd>
-              </div>
-            </dl>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__img" src="" alt="Фото особняк в лесу">
-          </a>
-          <div class="catalog__wrapper">
-            <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Особняк в лесу</a>
-            <p class="catalog__description">Площадь — 406 м2</p>
-            <dl class="catalog__description properties">
-              <div class="properties__wrapper">
-                <dt class="properties__item">комнат</dt>
-                <dd class="properties__description">12</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">спален</dt>
-                <dd class="properties__description">8</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">этажа</dt>
-                <dd class="properties__description">2</dd>
-              </div>
-            </dl>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__img" src="" alt="Фото домика на дереве">
-          </a>
-          <div class="catalog__wrapper">
-            <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Домик на дереве</a>
-            <p class="catalog__description">Площадь — 75 м2</p>
-            <dl class="catalog__description properties">
-              <div class="properties__wrapper">
-                <dt class="properties__item">комнат</dt>
-                <dd class="properties__description">3</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">спальни</dt>
-                <dd class="properties__description">2</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">этаж</dt>
-                <dd class="properties__description">1</dd>
-              </div>
-            </dl>
-          </div>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">
-            <img class="catalog__img" src="" alt="Фото лесного дом у пруда">
-          </a>
-          <div class="catalog__wrapper">
-            <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Лесной дом у пруда</a>
-            <p class="catalog__description">Площадь — 81 м2</p>
-            <dl class="catalog__description properties">
-              <div class="properties__wrapper">
-                <dt class="properties__item">комнаты</dt>
-                <dd class="properties__description">3</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">спальни</dt>
-                <dd class="properties__description">2</dd>
-              </div>
-              <div class="properties__wrapper">
-                <dt class="properties__item">этаж</dt>
-                <dd class="properties__description">1</dd>
-              </div>
-            </dl>
-          </div>
-        </li>
-      </ul>
+      <div class="catalog__wrapper container">
+        <h2 class="catalog__title title">Каталог</h2>
+        <h3 class="catalog__subtitle subtitle">Дома для аренды</h3>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="" alt="Фото современного дома">
+            </a>
+            <div class="catalog__wrapper">
+              <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Современная классика</a>
+              <p class="catalog__description">Площадь — 186 м2</p>
+              <dl class="catalog__description properties">
+                <div class="properties__wrapper">
+                  <dt class="properties__item">комнат</dt>
+                  <dd class="properties__description">5</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">спальни</dt>
+                  <dd class="properties__description">3</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">этажа</dt>
+                  <dd class="properties__description">2</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="" alt="Фото дома на берегу озера">
+            </a>
+            <div class="catalog__wrapper">
+              <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Дом на берегу озера</a>
+              <p class="catalog__description">Площадь — 242 м2</p>
+              <dl class="catalog__description properties">
+                <div class="properties__wrapper">
+                  <dt class="properties__item">комнат</dt>
+                  <dd class="properties__description">7</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">спальни</dt>
+                  <dd class="properties__description">4</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">этажа</dt>
+                  <dd class="properties__description">2</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="" alt="Фото особняк в лесу">
+            </a>
+            <div class="catalog__wrapper">
+              <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Особняк в лесу</a>
+              <p class="catalog__description">Площадь — 406 м2</p>
+              <dl class="catalog__description properties">
+                <div class="properties__wrapper">
+                  <dt class="properties__item">комнат</dt>
+                  <dd class="properties__description">12</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">спален</dt>
+                  <dd class="properties__description">8</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">этажа</dt>
+                  <dd class="properties__description">2</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="" alt="Фото домика на дереве">
+            </a>
+            <div class="catalog__wrapper">
+              <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Домик на дереве</a>
+              <p class="catalog__description">Площадь — 75 м2</p>
+              <dl class="catalog__description properties">
+                <div class="properties__wrapper">
+                  <dt class="properties__item">комнат</dt>
+                  <dd class="properties__description">3</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">спальни</dt>
+                  <dd class="properties__description">2</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">этаж</dt>
+                  <dd class="properties__description">1</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__link" href="#">
+              <img class="catalog__img" src="" alt="Фото лесного дом у пруда">
+            </a>
+            <div class="catalog__wrapper">
+              <a href="product-toys.html" class="catalog__link catalog__link--subtitle">Лесной дом у пруда</a>
+              <p class="catalog__description">Площадь — 81 м2</p>
+              <dl class="catalog__description properties">
+                <div class="properties__wrapper">
+                  <dt class="properties__item">комнаты</dt>
+                  <dd class="properties__description">3</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">спальни</dt>
+                  <dd class="properties__description">2</dd>
+                </div>
+                <div class="properties__wrapper">
+                  <dt class="properties__item">этаж</dt>
+                  <dd class="properties__description">1</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="page-main__request request">
       <h2 class="request__title title">Оставить заявку</h2>
