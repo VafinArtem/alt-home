@@ -9,7 +9,19 @@
   &::before {
     @include pseudo;
     right: 100%;
+    margin-right: 100px;
     counter-increment: section;
     content: "0" counters(section, ".");
+  }
+
+  &::after {
+    @include pseudo;
+    right: 100%;
+    top: 50%;
+    margin-right: 7px;
+    margin-top: -1px;
+    width: 84px;
+    height: 1px;
+    background-color: $special-marine;
   }
 }
