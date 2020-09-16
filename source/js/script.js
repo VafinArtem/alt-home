@@ -27,7 +27,6 @@ form.addEventListener("submit", function (evt) {
 
 let upButton = document.querySelector(".page-up");
 
-
 window.addEventListener("scroll", function (evt) {
   if (window.pageYOffset > 200) {
     upButton.classList.add("page-up--active");
