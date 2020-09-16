@@ -9,6 +9,7 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
+const concat = require('gulp-concat');
 const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
@@ -104,8 +105,8 @@ exports.html = html;
 // JS
 
 const js = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(rename("script.min.js"))
+  return gulp.src("source/js/*.js")
+    .pipe(concat("script.min.js"))
     .pipe(sourcemap.init())
     .pipe(uglify())
     .pipe(sourcemap.write("."))

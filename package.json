@@ -8,6 +8,7 @@
     "browser-sync": "2.26.*",
     "del": "5.1.*",
     "gulp": "4.0.*",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "4.0.*",
     "gulp-htmlmin": "5.0.*",
     "gulp-imagemin": "7.1.*",
@@ -20,9 +21,9 @@
     "gulp-svgstore": "7.0.*",
     "gulp-uglify-es": "2.0.*",
     "gulp-webp": "4.0.*",
+    "normalize-scss": "7.0.*",
     "stylelint": "13.*.*",
-    "stylelint-config-htmlacademy": "0.1.*",
-    "normalize-scss": "7.0.*"
+    "stylelint-config-htmlacademy": "0.1.*"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
