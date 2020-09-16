@@ -93,12 +93,12 @@
           </li>
         </ul>
         <div class="slider__control">
-          <button class="slider__btn slider__btn--prev slider__btn--not-active">
+          <button class="slider__btn slider__btn--prev slider__btn--not-active" aria-label="Предыдущий слайд">
             <svg class="slider__icon" width="30" height="16">
               <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
           </button>
-          <button class="slider__btn slider__btn--next">
+          <button class="slider__btn slider__btn--next" aria-label="Следующий слайд">
             <svg class="slider__icon slider__icon--next" width="30" height="16">
               <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
@@ -319,7 +319,12 @@
           <button type="submit" class="form__button button">Отправить</button>
         </form>
       </div>
-      <img src="img/image_boat@1x.jpg" width="678" height="737" alt="Фото с лодкой на озере" class="request__img">
+      <picture>
+        <source type="image/webp" srcset="img/image_boat@1x.webp 1x, img/image_boat@2x.webp 2x">
+        <img src="img/image_boat@1x.jpg" width="678" height="737" alt="Фото с лодкой на озере" class="request__img"
+          srcset="img/image_boat@2x.jpg 2x">
+      </picture>
+
     </section>
   </main>
 
