@@ -2,6 +2,8 @@
   @include list-none;
 
   display: flex;
+  flex-wrap: wrap;
+  width: 381px;
 }
 
 .navigation__item {
