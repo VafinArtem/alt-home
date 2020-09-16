@@ -1,5 +1,5 @@
 let form = document.querySelector(".form")
-let formInputs = form.querySelectorAll(".js-form__input");
+let formInputs = form.querySelectorAll(".js-form-input");
 
 
 for (let formInput of formInputs) {
