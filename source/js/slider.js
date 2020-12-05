@@ -15,37 +15,51 @@ const enabledButton = (buttonElement) => {
   buttonElement.classList.remove(`slider__btn--not-active`);
 };
 
-sliderArrowNext.addEventListener(`click`, () => {
-  for (let i = 0; i < sliderItemsNode.length; i++) {
-    if (sliderItemsNode[i].classList.contains(`js-slide-active`)) {
-      sliderItemsNode[i-1] !== undefined ? sliderItemsNode[i-1].classList.toggle(`js-slide-prev`) : enabledButton(sliderArrowPrev);
+const iterating = (items, direction) => {
+  let nextSlide = null;
+  let nextSlideClass = null;
+  let prevSlideClass = null;
 
-      sliderItemsNode[i].classList.remove(`js-slide-active`);
-      sliderItemsNode[i].classList.add(`js-slide-prev`);
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].classList.contains(`js-slide-active`)) {
 
-      sliderItemsNode[i+1].classList.remove(`js-slide-next`);
-      sliderItemsNode[i+1].classList.add(`js-slide-active`);
+      if (direction === `right`) {
+        nextSlide = i + 1;
+        nextSlideClass = `js-slide-next`;
+        prevSlideClass = `js-slide-prev`;
+      } else if (direction === `left`) {
+        nextSlide = i - 1;
+        nextSlideClass = `js-slide-prev`;
+        prevSlideClass = `js-slide-next`;
+      }
 
-      sliderItemsNode[i+2] === undefined ? disabledButton(sliderArrowNext) : sliderItemsNode[i+2].classList.add(`js-slide-next`);
+      if (direction === `left`) {
+        items[nextSlide+2] !== undefined ? items[nextSlide+2].classList.toggle(prevSlideClass) : enabledButton(sliderArrowNext);
+      } else {
+        items[nextSlide-2] !== undefined ? items[nextSlide-2].classList.toggle(prevSlideClass) : enabledButton(sliderArrowPrev);
+      }
+
+      items[i].classList.remove(`js-slide-active`);
+      items[i].classList.add(prevSlideClass);
+
+      items[nextSlide].classList.remove(nextSlideClass);
+      items[nextSlide].classList.add(`js-slide-active`);
+
+      if (direction === `left`) {
+        items[nextSlide-1] === undefined ? disabledButton(sliderArrowPrev) : items[nextSlide-1].classList.add(nextSlideClass);
+      } else {
+        items[nextSlide+1] === undefined ? disabledButton(sliderArrowNext) : items[nextSlide+1].classList.add(nextSlideClass);
+      }
       break;
     }
   }
+};
+
+sliderArrowNext.addEventListener(`click`, () => {
+  iterating(sliderItemsNode, `right`);
 });
 
 sliderArrowPrev.addEventListener(`click`, () => {
-  for (let i = 0; i < sliderItemsNode.length; i++) {
-    if (sliderItemsNode[i].classList.contains(`js-slide-active`)) {
-      sliderItemsNode[i+1] !== undefined ? sliderItemsNode[i+1].classList.toggle(`js-slide-next`) : enabledButton(sliderArrowNext);
-
-      sliderItemsNode[i].classList.remove(`js-slide-active`);
-      sliderItemsNode[i].classList.add(`js-slide-next`);
-
-
-      sliderItemsNode[i-1].classList.remove(`js-slide-prev`);
-      sliderItemsNode[i-1].classList.add(`js-slide-active`);
-
-      sliderItemsNode[i-2] === undefined ? disabledButton(sliderArrowPrev) : sliderItemsNode[i-2].classList.add(`js-slide-prev`);
-      break;
-    }
-  }
+  iterating(sliderItemsNode, `left`);
 });
+
