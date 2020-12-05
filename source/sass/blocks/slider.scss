@@ -6,10 +6,20 @@
   @include list-none;
 
   grid-area: 1 / -1 / 1 / -1;
+  display: grid;
 }
 
 .slider__img {
   display: block;
+}
+
+.slider__item {
+  grid-area: 1 / -1 / 1 / -1;
+  display: none;
+
+  &.js-slide-active {
+    display: block;
+  }
 }
 
 .slider__control {

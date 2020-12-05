@@ -82,9 +82,37 @@
           </ul>
         </div>
       </div>
-      <div class="promo__wrapper promo__wrapper--slider slider">
+      <div class="promo__wrapper promo__wrapper--slider slider js-slider">
         <ul class="slider__list">
-          <li class="slider__item">
+          <li class="slider__item js-slide js-slide-active">
+            <picture>
+              <source type="image/webp" srcset="img/image_home_1@1x.webp 1x, img/image_home_1@2x.webp 2x">
+              <img src="img/image_home_1@1x.jpg" srcset="img/image_home_1@2x.jpg 2x" width="795" height="496"
+                alt="Фото загородного дома" class="slider__img">
+            </picture>
+          </li>
+          <li class="slider__item js-slide js-slide-next">
+            <picture>
+              <source type="image/webp" srcset="img/image_home_1@1x.webp 1x, img/image_home_1@2x.webp 2x">
+              <img src="img/image_home_1@1x.jpg" srcset="img/image_home_1@2x.jpg 2x" width="795" height="496"
+                alt="Фото загородного дома" class="slider__img">
+            </picture>
+          </li>
+          <li class="slider__item js-slide">
+            <picture>
+              <source type="image/webp" srcset="img/image_home_1@1x.webp 1x, img/image_home_1@2x.webp 2x">
+              <img src="img/image_home_1@1x.jpg" srcset="img/image_home_1@2x.jpg 2x" width="795" height="496"
+                alt="Фото загородного дома" class="slider__img">
+            </picture>
+          </li>
+          <li class="slider__item js-slide">
+            <picture>
+              <source type="image/webp" srcset="img/image_home_1@1x.webp 1x, img/image_home_1@2x.webp 2x">
+              <img src="img/image_home_1@1x.jpg" srcset="img/image_home_1@2x.jpg 2x" width="795" height="496"
+                alt="Фото загородного дома" class="slider__img">
+            </picture>
+          </li>
+          <li class="slider__item js-slide">
             <picture>
               <source type="image/webp" srcset="img/image_home_1@1x.webp 1x, img/image_home_1@2x.webp 2x">
               <img src="img/image_home_1@1x.jpg" srcset="img/image_home_1@2x.jpg 2x" width="795" height="496"
@@ -93,12 +121,13 @@
           </li>
         </ul>
         <div class="slider__control">
-          <button class="slider__btn slider__btn--prev slider__btn--not-active" aria-label="Предыдущий слайд">
+          <button class="slider__btn slider__btn--prev slider__btn--not-active js-slider-arr-prev"
+            aria-label="Предыдущий слайд" disabled>
             <svg class="slider__icon" width="30" height="16">
               <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
           </button>
-          <button class="slider__btn slider__btn--next" aria-label="Следующий слайд">
+          <button class="slider__btn slider__btn--next js-slider-arr-next" aria-label="Следующий слайд">
             <svg class="slider__icon slider__icon--next" width="30" height="16">
               <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
